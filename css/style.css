@@ -1,0 +1,285 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  font-size: 20px;
+  overflow-x: hidden;
+  color: #fff;
+  background-color: #727272;
+}
+header{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) ,url('../image/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+}
+.clearfix: after{
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0px;
+  clear: both;
+}
+
+.row{
+  margin: auto;
+  max-width: 1180px;
+
+}
+.logo{
+  height: 120px;
+  width: auto;
+  float: left;
+  margin-top: 20px;
+  }
+.list{
+  float: right;
+  margin-top: 60px;
+  }
+.list li{
+  display: inline-block;
+  list-style: none;
+  margin-right:  40px;
+  }
+.list li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 100;
+  }
+.header_content{
+  width: 1180px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.header_content h1{
+  color: #fff;
+  font-size: 240%;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+  margin-left: 5px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+.btn{
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 5px;
+  font-weight: lighter;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 200px;
+  transition: background-color 0.2s,border 0.2s,color 0.2;
+}
+.btn1{
+  background-color: transparent;
+  margin-right: 15px;
+  border: 1px solid white;
+}
+.btn2{
+  background-color: transparent;
+  border: 1px solid white;
+}
+.btn:hover{
+  background-color: darkorange;
+}
+.colorchange{
+  animation: colorchangehomestay 1s infinite;
+}
+@keyframes colorchangehomestay {
+  0%{color: darkorange;}
+  25%{color: white;}
+  50%{color: darkorange;}
+  100%{color: white;}
+}
+.mobile{
+  display: none;
+}
+
+footer{
+
+  color: solid white;
+  background-color: none;
+}
+.right_align li{
+  list-style: none;
+  display: inline-block;
+  float: right;
+  padding: 5px;
+  size: 200px;
+}
+
+.center{
+text-align: center;
+
+}
+
+.left_align{
+  float: left;
+}
+/* responsive */
+
+@media only screen and (max-width:1180px) {
+    .header_content{
+      width: 100%;
+      padding: 0 2%;
+    }
+}
+@media only screen and (max-width:998px){
+  .header_content h1{
+    font-size: 200%;
+  }
+}
+@media only screen and (max-width:768px){
+  .header_content h1{
+    font-size:150%;
+  }
+
+
+}
+@media only screen and (max-width:480px){
+  .btn1{
+    margin-bottom: 20px;
+  }
+  h1{
+    margin-top: 50%;
+    font-size: 40%;
+  }
+}
+
+
+
+.text-white{
+  color: white;
+  font-size: 30px;
+  padding: 5px;
+}
+=======================================
+/* GAllery page */
+=======================================
+
+div.gallery {
+  border: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+div.gallery:hover {
+  /* border: 0.1px solid white; */
+}
+
+div.gallery img {
+  width: 100%;
+  height:inherit ;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+.responsive {
+  margin-left: 60px;
+  padding: 6px 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+@media only screen  {
+
+  .items{
+    width: 100%;
+  }
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.colorful{
+  background-color: none;
+
+}
+.Room1{
+  padding-top: 20px;
+  padding-bottom: 10px;
+  float: left;
+
+}
+
+.gallery_back{
+    /* background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) ,url('../image/gallery_back.jpg');
+    background-size: auto;
+    background-repeat: repeat;
+    height: 100vh; */
+    background-color: black;
+}
+.navigation{
+  color: #fff;
+  margin-left: 30%;
+
+}
+.navigation li{
+  display: inline-block;
+  list-style: none;
+
+}
+.navigation li a{
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 25px;
+  font-size: 20px;
+  font-weight: 100;
+}
+.navigation li a:hover{
+  border:1px solid white;
+  padding: 2px 0px;
+}
+.about_back{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) ,url('../image/about_back.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.arrow{
+  border: 1px solid white;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 100;
+}
+.about_jairaja{
+  margin-left: 5%;
+  margin-top: 30px;
+  margin-right: 60px;
+}
+.about_jairaja h2{
+  font-weight: 300;
+
+
+}
+.about_jairaja{
+  text-align: left;
+
+}
